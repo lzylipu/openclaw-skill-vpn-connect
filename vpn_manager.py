@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python3
 """
 VPN 连接管理
@@ -17,7 +18,7 @@ import time
 class VPNManager:
     """VPN 上下文管理器，自动连接和断开"""
     
-    def __init__(self, connection_name: str = "<vpn-connection>", timeout: int = 30):
+    def __init__(self, connection_name: str = os.environ.get("VPN_CONNECTION_NAME", ""), timeout: int = 30):
         self.connection_name = connection_name
         self.timeout = timeout
         self._was_connected = False
