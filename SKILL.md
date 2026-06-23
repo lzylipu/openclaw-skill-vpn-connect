@@ -11,7 +11,7 @@ metadata:
   hermes:
     tags: [vpn, ikev2, ipsec, network, lan, 连接, 内网]
     related_skills: [wake-pc, openwrt-redial, permission-control]
-    homepage: https://github.com/lzylipu/openclaw-skill-vpn-connect
+    homepage: https://github.com/lzylipu/skill-vpn-connect
     category: personal
     skill_type: automation
 ---
